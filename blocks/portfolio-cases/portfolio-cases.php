@@ -86,8 +86,7 @@
           $(document).ready(function() {
             $('.case__wrap').click(function(e) {
               e.preventDefault();
-              $(this).find('.case__additional-info').slideToggle();
-              $(this).toggleClass('case__wrap_full');
+              $(this).find('.case__additional-info').slideToggle(300);
             });
           });
         </script>
