@@ -12,14 +12,15 @@ Template name: Главная
   <!-- Баннер с персонажем -->
   <?php  include 'blocks/main-promo/main-promo.php'; ?>
   <!-- Портфолио и кейсы -->
-  <?php    include 'blocks/portfolio-cases/portfolio-cases.php'; ?>
-  <?php    include 'blocks/front-page/tablet-proove/tablet-proove.php'; ?>
-  <?php    include 'blocks/front-page/quality/quality.php'; ?>
-  <?php    include 'blocks/front-page/future-slogan/future-slogan.php'; ?>
-  <?php    include 'blocks/front-page/steps/steps.php'; ?>
-  <?php    include 'blocks/front-page/workflow/workflow.php'; ?>
-  <?php    include 'blocks/front-page/reduce-advertising-cost/reduce-advertising-cost.php'; ?>
-  <?php    include 'blocks/front-page/order/order.php'; ?>
+  <?php
+    include 'blocks/portfolio-cases/portfolio-cases.php';
+    include 'blocks/front-page/tablet-proove/tablet-proove.php';
+    include 'blocks/front-page/quality/quality.php';
+    include 'blocks/front-page/future-slogan/future-slogan.php';
+    include 'blocks/front-page/steps/steps.php';
+    include 'blocks/front-page/workflow/workflow.php';
+    include 'blocks/front-page/reduce-advertising-cost/reduce-advertising-cost.php';
+    include 'blocks/front-page/order/order.php'; ?>
 
   <!-- Что изменится, когда мы начнем рабоать -->
   <?php // include 'blocks/front-page/changes/changes.php'; ?>
