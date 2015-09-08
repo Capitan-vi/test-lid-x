@@ -18,20 +18,22 @@ Template name: Главная
   <?php    include 'blocks/front-page/future-slogan/future-slogan.php'; ?>
   <?php    include 'blocks/front-page/steps/steps.php'; ?>
   <?php    include 'blocks/front-page/workflow/workflow.php'; ?>
-  <?php    include 'blocks/front-page/changes/changes.php'; ?>
   <?php    include 'blocks/front-page/reduce-advertising-cost/reduce-advertising-cost.php'; ?>
   <?php    include 'blocks/front-page/order/order.php'; ?>
 
+  <!-- Что изменится, когда мы начнем рабоать -->
+  <?php // include 'blocks/front-page/changes/changes.php'; ?>
+
 	<!-- Мне нужны клиенты -->
-	<?php //include 'blocks/want-clients/want-clients.php'; ?>
+	<?php // include 'blocks/want-clients/want-clients.php'; ?>
 
 	<!-- Как мы делаем эффективную рекламу -->
 	<?php // include 'blocks/steps-promo/steps-promo.php'; ?>
 
 	<!-- Хочу консультацию -->
-	<?php //include 'blocks/want-consultation/want-consultation.php'; ?>
+	<?php // include 'blocks/want-consultation/want-consultation.php'; ?>
 
 	<!-- Давайте добавим вам клиентов -->
-	<?php //  include 'blocks/add-clients/add-clients.php'; ?>
+	<?php // include 'blocks/add-clients/add-clients.php'; ?>
 
 <?php get_footer(); ?>
