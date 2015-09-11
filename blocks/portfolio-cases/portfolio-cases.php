@@ -24,8 +24,12 @@
 
             <li class="case__wrap">
               <div class="case__head">
-                <div class="case__img-wrap"><img src="<?php the_field("case_logo"); ?>" alt=""></div>
-                <div class="case__info"><?php the_field("case_name"); ?></div>
+                <!-- <div class="case__tablet-row"> -->
+                  <div class="case__img-wrap"><img src="<?php the_field("case_logo"); ?>" alt=""></div>
+                  <div class="case__info"><?php the_field("case_name"); ?></div>
+
+                  <br class="case__line-separator_tablet">
+                <!-- </div> -->
 
                 <?php if(get_field('case_numbers')):
                 while(has_sub_field('case_numbers')): ?>
