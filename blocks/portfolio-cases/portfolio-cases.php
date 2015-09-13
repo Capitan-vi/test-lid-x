@@ -19,7 +19,12 @@
 
         <!-- portfolio-cases__projects -->
         <ul class="portfolio-cases__tab portfolio-cases__projects">
-          <?php query_posts('post_type=case'); ?>
+          <?php if ( is_front_page() ) {
+            query_posts('post_type=case&posts_per_page=3');
+          } else {
+            query_posts('post_type=case');
+          }
+          ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
             <li class="case__wrap">
@@ -91,6 +96,7 @@
             $('.case__wrap').click(function(e) {
               e.preventDefault();
               $(this).find('.case__additional-info').slideToggle(300);
+              $(this).toggleClass('case__wrap_opened');
             });
           });
         </script>
