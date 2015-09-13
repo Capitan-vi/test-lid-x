@@ -12,6 +12,35 @@
 
     &__wrap {
       margin: 20px 0 20px;
+      padding: 20px 0;
+      padding-bottom: 32px;
+
+      &:after {
+        content: '∨';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -8px;
+        box-sizing: border-box;
+        min-width: 45px;
+        min-height: 45px;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        color: #7773DF;
+        background-color: rgb(219, 217, 217);
+        font-size: 22px; /* */
+        line-height: 1.5; /* */
+      }
+
+      &_opened:after {
+        content: '∧';
+      }
+    }
+
+    &__head {
+      box-sizing: border-box;
+      padding: 0 20px;
     }
 
     &__img-wrap {
