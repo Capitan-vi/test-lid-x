@@ -20,13 +20,19 @@
 
 .portfolio-cases__projects {
 
+  * {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &_front-page {
     & .case__wrap:not(:first-of-type) {
       display: none;
     }
   }
-
-  text-align: center;
 
   .case {
     &__main,&__img-wrap,&__info,&__descr,&__number-info {
@@ -35,13 +41,75 @@
     }
 
     &__wrap {
-      margin-bottom: 10px;
-      padding:0;
-      border:none;
-
       &:first-of-type {
-        padding-top:0px;
+        padding-top: 0px;
       }
+
+      margin: 20px 0 20px;
+      padding: 20px 0;
+      padding-bottom: 32px;
+
+      &:after {
+        content: '∨';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -8px;
+        box-sizing: border-box;
+        min-width: 45px;
+        min-height: 45px;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        color: #7773DF;
+        background-color: rgb(219, 217, 217);
+        font-size: 22px; /* */
+        line-height: 1.5; /* */
+      }
+
+      &_opened:after {
+        content: '∧';
+      }
+    }
+
+    &__additional-info {
+      box-sizing: border-box;
+      padding-top: 0;
+
+      & h4 {
+        margin-bottom: 6px;
+      }
+
+      & blockquote {
+        margin-top: 0;
+      }
+    }
+
+    &__used h4 {
+      margin-bottom: 9px;
+    }
+
+    &__part--left,
+    &__part--right,
+    &__respond-company {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+
+    &__part--left {
+      margin-bottom: 15px;
+    }
+
+    &__respond-company {
+      margin-bottom: .8em;
+    }
+
+    &__respond .btn {
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     &__img-wrap img {
@@ -50,7 +118,7 @@
     }
 
     &__info {
-      margin:15px 0;
+      margin: 6px 0;
       max-width: 400px;
     }
 
@@ -60,12 +128,14 @@
       margin-bottom: 15px;
       box-sizing: border-box;
       padding: 10px 30px 10px 10px;
-      text-align: center;
     }
 
     &__number-info {
-      text-align:center;
-      margin: 5px;
+      margin: 0;
+
+      & * {
+        vertical-align: baseline;
+      }
     }
   }
 
