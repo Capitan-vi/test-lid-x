@@ -20,6 +20,12 @@
 
 .portfolio-cases__projects {
 
+  &_front-page {
+    & .case__wrap:not(:first-of-type) {
+      display: none;
+    }
+  }
+
   text-align: center;
 
   .case {

@@ -18,7 +18,14 @@
 
 
         <!-- portfolio-cases__projects -->
-        <ul class="portfolio-cases__tab portfolio-cases__projects">
+        <ul class="
+          portfolio-cases__tab
+          portfolio-cases__projects
+          <?php if ( is_front_page() ) {
+              echo 'portfolio-cases__projects_front-page';
+          } ?>
+          ">
+
           <?php if ( is_front_page() ) {
             query_posts('post_type=case&posts_per_page=3');
           } else {
