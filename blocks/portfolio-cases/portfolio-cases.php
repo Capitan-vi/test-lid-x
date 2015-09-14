@@ -122,10 +122,12 @@
       </div>
       <!-- END portfolio-cases__korpus-->
 
+      <?php if ( is_front_page() ) : ?>
+        <div class="portfolio-cases__portfolio-link-container">
+            <a href="./portfolio" class="portfolio-cases__portfolio-link">Смотреть портфолио</a>
+        </div>
+      <?php endif; ?>
 
-      <div class="portfolio-cases__portfolio-link-container">
-          <a href="./portfolio" class="portfolio-cases__portfolio-link">Смотреть портфолио</a>
-      </div>
 
     </div>
 
