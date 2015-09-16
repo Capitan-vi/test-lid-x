@@ -1,136 +1,102 @@
-.portfolio-cases__helper{ display: none; }
+.portfolio-cases__helper { display: none; }
 
-.portfolio-cases__short{
-        
-        .case {
-        
-            &__main{
-                
-                width: 100%;
-                float:none;
-                overflow: hidden;
-              
-                
-            }
-            
-            &__wrap {
-                
-                margin: 20px 0 20px;
+.portfolio-cases__projects {
 
-            }
-            
-            &__img-wrap {
-                
-                float: right;
-                max-width: 120px;
-                min-height: 80px;
-                
-            }
-            
-            &__info {
-                
-                float: left;
-                text-align:left;
-                
-            }
-            
-            &__descr {
-    
-                
-                width: 100%;
-                float: none;
-                text-align:left;
-              
-            }
-            
-            &__number-info {
-                
-                
-                
-            }
- 
-        
-        }
-        
+  &_front-page {
+    & .case__wrap:not(:first-of-type) {
+      display: none;
+    }
+  }
+
+  & * {
+    vertical-align: top;
+  }
+
+  .case {
+
+    &__main{
+      width: 100%;
+      float:none;
+      overflow: hidden;
+    }
+
+    &__wrap {
+      margin: 20px 0 20px;
+      padding: 20px 0;
+      padding-bottom: 32px;
+
+      &:after {
+        content: '∨';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -8px;
+        box-sizing: border-box;
+        min-width: 45px;
+        min-height: 45px;
+        padding: 5px;
+        border-radius: 50%;
+        text-align: center;
+        color: #7773DF;
+        background-color: rgb(219, 217, 217);
+        font-size: 22px; /* */
+        line-height: 1.5; /* */
+      }
+
+      &_opened:after {
+        content: '∧';
+      }
+    }
+
+    &__head {
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+
+    &__img-wrap {
+      float: right;
+      max-width: 120px;
+      min-height: 80px;
+      width: 40%;
+    }
+
+    &__info {
+      float: none;
+      width: 60%;
+      margin-bottom: 18px;
+    }
+
+    &__number-info {
+      box-sizing: border-box;
+      vertical-align: top;
+      width: calc(~'100% - 145px');
+      padding-right: 15px;
+      float: none;
+      margin: 0;
+      margin-bottom: 13px;
+
+      & * {
+        vertical-align: baseline;
+      }
+    }
+
+    &__number {
+      margin-bottom: 0;
+    }
+
+    &__descr {
+      width: 100%;
+      float: none;
+      text-align: left;
+    }
+
+    &__respond-company{
+      width: 100%;
+      margin-bottom: .8em;
+    }
+  }
 }
-
-
-
-.portfolio-cases__full{
-    
-    
-     .case {
-        
-            &__main{
-                
-                width: 100%;
-                float:none;
-                overflow: hidden;
-              
-                
-            }
-            
-            &__wrap {
-                
-                margin: 20px 0 20px;
-
-            }
-            
-            &__img-wrap {
-                
-                float: right;
-                max-width: 120px;
-                min-height: 80px;
-                width: 40%;
-                
-            }
-            
-            &__info {
-                
-                float: none;
-                width: 60%;
-                margin-bottom: 0px;
-                
-            }
-            
-            &__number-info{
-                
-               vertical-align:top; 
-               width:100%;
-               float: none;
-               margin: 5px 0px;
-                
-            }
-            
-            &__descr {
-    
-                
-                width: 100%;
-                float: none;
-                text-align:left;
-              
-            }
-            
-            &__respond-company{
-                
-               width:100%; 
-                
-            }
-            
-            &__number-info {
-                
-                
-                
-            }
- 
-        
-        }
-    
-}
-
 
 .portfolio-cases__presentation-wrap {
-    
-    br {display: none;}
-    
+  br {display: none;}
 }
