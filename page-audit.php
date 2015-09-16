@@ -12,11 +12,17 @@ Template name: Аудит
 		<!-- Аудит промо -->
 		<?php include 'blocks/audit-promo/audit-promo.php'; ?>
 
-		<!-- Как мы проводим аудит? -->
+		<!-- Что мы проверяем в аудите? -->
 		<?php include 'blocks/audit-process/audit-process.php'; ?>
 
-		<!-- Как мне поможет аудит? -->
-		<?php include 'blocks/audit-help/audit-help.php'; ?>
+		<!-- Примеры аудита -->
+		<?php include 'blocks/audit-examples/audit-examples.php'; ?>
+
+    <!-- Варианты аудита -->
+    <?php include 'blocks/audit-variants/audit-variants.php'; ?>
+
+		<!-- Закажите аудит -->
+		<?php include 'blocks/audit-order/audit-order.php'; ?>
 
 	</main>
 

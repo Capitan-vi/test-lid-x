@@ -1,63 +1,11 @@
-
 .audit-process {
-  background-color: #425065;
-  position: relative;
-  padding-bottom: 55px;
-  padding-top: 37px;
-  // overflow: hidden;
 
-  &__title {
-      color: #38d272;
-      font-weight: normal;
+	position: relative;
+	background-color: @violet-dark;
+	padding-top: 75px;
+	padding-bottom: 95px;
 
-  }
-
-  &__title-wrapper {
-    margin-bottom: 10px;
-  }
-
-  &__title-img {
-    display: inline-block;
-    width: 40px;
-    vertical-align: middle;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
-  &__title--small {
-    display: inline-block;
-    color: #fff;
-    font-size: @medium;
-    font-weight: normal;
-    position: relative;
-   // margin-top: 5px;
-    padding-left: 10px;
-    position: relative;
-    vertical-align: middle;
-
-    @media (max-width: 768px) {
-      margin-bottom: 10px;
-      padding-left: 0;
-    }
-  }
-
-    @media (max-width: 768px) {
-      padding-left: 0;
-    }
-  }
-
-@media (max-width: 1139px) {
-  .audit-process {
-    text-align: center;
-  }
-}
-@media (min-width: 960px) {
-  .audit-process {
-    padding-bottom: 100px;
-  }
-  .audit-process:before {
+	&:before {
     content: "";
     display: block;
     position: absolute;
@@ -65,9 +13,10 @@
     width: 50%;
     top: -37px;
     right: 0;
-    background-color: #425065;
+    background-color: @violet-dark;
   }
-  .audit-process:after {
+
+  &:after {
     content: "";
     display: block;
     position: absolute;
@@ -75,177 +24,100 @@
     width: 0;
     right: 50%;
     top: -37px;
-    border-right: 34px solid #425065;
+    border-right: 34px solid @violet-dark;
     border-top: 37px solid transparent;
   }
-}
 
-@media (min-width: 1140px) {
-  .audit-process__title {
-    position: relative;
+  &__title {
+      
+    color: @green-new;
+    font-weight: normal;
+    font-size: @extra;
+    position: absolute;
+    left: 53%;
+    top: -85px;
+
+  }
+
+	&__subtitle-wrapper {
+
+		margin-bottom: 25px;
+		min-height: (36px + @bigger);
+
+	}
+
+  &__subtitle {
+
+		padding-left: 10px;
+		display: inline;
+		color: @white;
+		font-size: @bigger;
+		line-height: @bigger;
+		font-weight: normal;
+		vertical-align: middle;
+
+  }
+
+  &__list {
+
+		padding-left: @medium;
+		padding-right: @medium;
+		list-style: none;
+		list-style-image: url('@{base-url}audit-process/img/audit-listmarker.png');
+
+  }
+
+  &__item {
+
+		min-height: 52px;
+		margin-bottom: 20px;
+		padding-left: 5px;
+		color: @white;
+		font-size: @medium;
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
   }
 
 }
 
+.icon-audit-process {
 
-.audit-process__item {
-  padding-right: 0;
-  margin-bottom: 35px;
-  text-align: left;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
-}
-
-@media (max-width: 1139px) {
-  .audit-process__item {
-    padding-right: 0;
-  }
-}
-
-.audit-process__item__text {
-  display: inline-block;
-  vertical-align: middle;
-
-  @media (max-width: 500px) {
-    padding-left: 0;
-  }
-}
-
-.audit-process__item__image {
-  height: 70px;
-  border: 5px solid #38d272;
-  width: 70px;
-  position: relative;
-}
-
-
-
-.audit-process__item__image--fly:after {
-  background-image: url(http://lid-x.ru/wp-content/uploads/2015/07/Presentation_Card_with_Speech_Bubble_64.png);
-  width: 36px;
-  height: 36px;
-  background-size: 100%;
-  background-position: center;
-}
-
-.audit-process__item__text {
-  color: @beige-pale;
-  line-height: 25px;
-  font-size: 15px;
-  width: 100%;
-}
-
-.audit-process__list {
-  list-style: none;
-}
-
-.audit-process__list:last-child .audit-process__item__image {
-  border: none;
-}
-
-.btn-only-pro {
-  background: @green-light;
-  border-radius: 4px;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 18px;
-  padding-left: 4px;
-  padding-right: 4px;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-// Sprite
-
-.stitches-icon(@x: 0, @y: 0, @width: 0, @height: 0) {
-    background-position: @x @y;
-    width: @width;
-    height: @height;
-}
-
-.icon {
-    background-image: url(http://beta.lid-x.ru/wp-content/themes/lidx/blocks/audit-process/img/sprite-audit.png);
+    background-image: url('@{base-url}audit-process/img/sprite.png');
+    background-repeat: no-repeat;
     display: inline-block;
     vertical-align: middle;
-    &.icon-audit-adaptive {
-        .stitches-icon(-5px, -5px, 34px, 34px);
+
+		&.icon-audit-design {
+        .stitches-icon(-5px, -5px, 36px, 36px);
     }
 
-    &.icon-audit-check {
-        .stitches-icon(-49px, -5px, 32px, 30px);
+    &.icon-audit-marketing {
+        .stitches-icon(-51px, -5px, 36px, 36px);
     }
 
-    &.icon-audit-contact {
-        .stitches-icon(-49px, -45px, 31px, 33px);
-    }
-
-    &.icon-audit-form {
-        .stitches-icon(-91px, -5px, 41px, 35px);
-    }
-
-    &.icon-audit-nav {
-        .stitches-icon(-142px, -5px, 25px, 23px);
-    }
-
-    &.icon-audit-offer {
-        .stitches-icon(-5px, -50px, 33px, 44px);
+    &.icon-audit-technic {
+        .stitches-icon(-5px, -51px, 36px, 36px);
     }
 
     &.icon-audit-text {
-        .stitches-icon(-90px, -50px, 35px, 33px);
+        .stitches-icon(-51px, -51px, 36px, 36px);
     }
 
-    &.icon-audit-visual {
-        .stitches-icon(-48px, -93px, 38px, 36px);
-    }
 }
 
-.icon-wrapper {
-  height: 40px;
-  line-height: 40px;
-  width: 38px;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+
+  @import "audit-process--tablet.less";
 
 }
 
+@media (max-width: @screen-xs-max) {
 
-
-//phone vertical
-
-@media screen and (max-width:480px) {
-
-  @import audit-process-micro.less
+  @import "audit-process--phone.less";
 
 }
-
-@media screen and (max-width:768px) {
-
-  @import audit-process--phone.less
-
-}
-
-
-// tablet
-
-@media (min-width:769px) and (max-width:960px) {
-
-  @import audit-process--tablet.less
-
-}
-
-
-// desktop
-
-@media (min-width:1140px) {
-
-  @import audit-process--wide.less
-
-}
-
-

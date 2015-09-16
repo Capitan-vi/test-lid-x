@@ -1,153 +1,65 @@
 <section class="audit-process">
+
   <div class="wrapper">
 
     <div class="row">
+    	<h2 class="audit-process__title">Что мы проверяем в аудите</h2>
+    </div>
 
-      <div class="col-md-4 col-lg-4">
-          <ul class="audit-process__list">
-
-              <li class="audit-process__item">
-                  <h2 class="audit-process__title section-tabs-title">Что входит в аудит</h2>
-              </li>
-
-              <li class="audit-process__item">
-
-                <div class="audit-process__title-wrapper">
-                  <div class="icon-wrapper"><i class="icon icon-audit-offer"></i></div>
-                  <h2 class="audit-process__title--small">Проверка предложения</h2>
-                </div>
-
-                <span class="audit-process__item__text">
-                  Продукт - именно то, за что клиент платит и любое
-                  упущенное преимущество или упущенный вопрос по
-                  продукту будет снижать конверсию.а что клиент платит и
-                  любое упущенное преимущество или упущенный вопрос
-                  по продукту будет снижать конверсию.
-                </span>
-
-              </li>
-
-              <li class="audit-process__item">
-
-                <div class="audit-process__title-wrapper">
-                  <div class="icon-wrapper"><i class="icon icon-audit-form"></i></div>
-                  <h2 class="audit-process__title--small">Проверка кнопок и форм</h2>
-                </div>
-
-                <span class="audit-process__item__text">
-                Добавить к форме подписи и комментарии, рабочее время, время и условия ответа Добавить проверку
-                вводимых значений и выводимое сообщение об
-                успешной отправке.
-                </span>
-
-              </li>
-
-          </ul>
-      </div>
-
-      <div class="col-md-4 col-lg-4">
-          <ul class="audit-process__list">
-
-              <li class="audit-process__item">
-
-                <div class="audit-process__title-wrapper">
-                   <div class="icon-wrapper"><i class="icon icon-audit-check"></i></div>
-                  <h2 class="audit-process__title--small">Проверка</h2>
-                </div>
-
-                  <span class="audit-process__item__text">
-                  Продукт - именно то, за что клиент платит
-                  и любое упущенное преимущество или
-                  упущенный вопрос по продукту будет
-                  снижать конверсию.
-                  </span>
-
-              </li>
-
-              <li class="audit-process__item">
-
-                <div class="audit-process__title-wrapper">
-                  <div class="icon-wrapper"><i class="icon icon-audit-text"></i></div>
-                  <h2 class="audit-process__title--small">Проверка текста</h2>
-                </div>
-
-                <span class="audit-process__item__text">
-                Тексты на сайте - находим ошибки,
-                несоответствия, размытые формулировки и
-                буллшиттинг.
-                </span>
-
-              </li>
-
-              <li class="audit-process__item">
-
-                <div class="audit-process__title-wrapper">
-                  <div class="icon-wrapper"><i class="icon icon-audit-adaptive"></i></div>
-                  <h2 class="audit-process__title--small">Проверка адаптивности</h2>
-                </div>
-
-                <span class="audit-process__item__text">
-                Мобильные устройства используют больше
-                20% интернет-пользователей. Не
-                оптимизируете сайт под телефоны и
-                планшеты - теряете клиентов.
-                </span>
-
-              </li>
-
-          </ul>
-      </div>
-
-      <div class="col-md-4 col-lg-4">
-          <ul class="audit-process__list">
-
-            <li class="audit-process__item">
-
-              <div class="audit-process__title-wrapper">
-               <div class="icon-wrapper"><i class="icon icon-audit-nav"></i></div>
-                <h2 class="audit-process__title--small">Проверка навигации</h2>
-              </div>
-
-              <span class="audit-process__item__text">
-               Компания со нелогичным сайтом
-               воспринимается не умеющей делать простым и
-               приятным и сервис, не умеющей говорить на
-               одном языке с клиентом и запутывающей его.
-              </span>
-            </li>
-
-            <li class="audit-process__item">
-
-              <div class="audit-process__title-wrapper">
-                <div class="icon-wrapper"><i class="icon icon-audit-contact"></i></div>
-                <h2 class="audit-process__title--small">Проверка контактов</h2>
-              </div>
-
-                <span class="audit-process__item__text">
-                Возможность быстро получить ответ или
-                связаться удобным образом критически
-                важна <a href="#" class="btn-only-pro">только Pro</a>
-                </span>
-            </li>
-
-            <li class="audit-process__item">
-
-              <div class="audit-process__title-wrapper">
-                <div class="icon-wrapper"><i class="icon icon-audit-visual"></i></div>
-                <h2 class="audit-process__title--small">Проверка визуального ряда</h2>
-              </div>
-
-                <span class="audit-process__item__text">
-                Визуализация и типографика, даем
-                рекомендации по улучшению внешнего
-                вида сайта <a href="#" class="btn-only-pro">только Pro</a>
-                </span>
-            </li>
-
-          </ul>
-      </div>
-
+    <div class="row">
+    	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    		<div class="audit-process__subtitle-wrapper">
+    			<i class="icon-audit-process icon-audit-marketing"></i>
+    			<i class="icon-audit-green-circle"></i>
+    			<h3 class="audit-process__subtitle">Маркетинг</h3>
+    		</div>
+    		<ul class="audit-process__list">
+    			<li class="audit-process__item">Позиционирование компании</li>
+    			<li class="audit-process__item">Предложение продукта</li>
+    		</ul>
+				<p class="audit-process__text hidden-sm hidden-md hidden-lg">Позиционирование компании, предложение продукта и соответствие сайта ожиданиям и потребностям целевой аудитории</p>
+    	</div>
+    	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    		<div class="audit-process__subtitle-wrapper">
+    			<i class="icon-audit-process icon-audit-design"></i>
+    			<i class="icon-audit-green-circle"></i>
+    			<h3 class="audit-process__subtitle">Дизайн</h3>
+    		</div>
+    		<ul class="audit-process__list">
+    			<li class="audit-process__item">Визуализация</li>
+    			<li class="audit-process__item">Типографика</li>
+    			<li class="audit-process__item">Изображения</li>
+    		</ul>
+				<p class="audit-process__text hidden-sm hidden-md hidden-lg">Визуализация, качество изображений, типографика</p>
+    	</div>
+    	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    		<div class="audit-process__subtitle-wrapper">
+    			<i class="icon-audit-process icon-audit-text"></i>
+    			<i class="icon-audit-green-circle"></i>
+    			<h3 class="audit-process__subtitle">Контент</h3>
+    		</div>
+    		<ul class="audit-process__list">
+    			<li class="audit-process__item">Конверсионные элементы</li>
+    			<li class="audit-process__item">Контакты</li>
+    			<li class="audit-process__item">Тексты</li>
+    		</ul>
+				<p class="audit-process__text hidden-sm hidden-md hidden-lg">Конверсионные элементы (кнопки, формы), контакты, тексты, навигация и архитектура</p>
+    	</div>
+    	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    		<div class="audit-process__subtitle-wrapper">
+    			<i class="icon-audit-process icon-audit-technic"></i>
+    			<i class="icon-audit-green-circle"></i>
+    			<h3 class="audit-process__subtitle">Технические соответствия</h3>
+    		</div>
+    		<ul class="audit-process__list">
+    			<li class="audit-process__item">Скорость загрузки</li>
+    			<li class="audit-process__item">Адаптивность</li>
+    			<li class="audit-process__item">SEO</li>
+    		</ul>
+				<p class="audit-process__text audit-process__text--last hidden-sm hidden-md hidden-lg">Скорость загрузки, SEO-оптимизация, адаптивность </p>
+    	</div>
     </div>
 
   </div>
+
 </section>

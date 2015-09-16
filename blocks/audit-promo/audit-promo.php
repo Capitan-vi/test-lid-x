@@ -7,7 +7,7 @@
         <p class="promo-audit__text promo-audit__text--bold">Каждый день посетители, которые могли бы стать клиентами, уходят, чтобы никогда не вернуться.</p>
         <p class="promo-audit__text hidden-xs hidden-md">9 частей, 60 слайдов, более 100 факторов проверки, рекомендации  по технологиям, юзабилити и маркетингу. Мы поможем найти слабые места и всех спасти. </p>
 
-        <a href="#audit-form" class="btn-flat promo-audit__order">Читать пример аудита</a>
+        <a href="#audit-example" class="btn-flat promo-audit__order">Читать пример аудита</a>
         <a href="#audit-form" class="btn-flat promo-audit__order">Заказать аудит</a>
 
       </div>
