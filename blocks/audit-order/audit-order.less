@@ -1,0 +1,57 @@
+.audit-order {
+
+  padding-top: 85px;
+  padding-bottom: 65px;
+  background-image: url('@{base-url}audit-order/img/bg-audit-order.jpg');
+  background-size: cover;
+
+  &__title {
+
+    font-size: @extra;
+    color: @violet-dark;
+
+  }
+
+  &__subtitle {
+
+    font-size: @medium;
+    line-height: 28px;
+    color: @violet-dark;
+
+  }
+
+  &__present-img {
+
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-bottom: 35px;
+
+  }
+
+  &__present-text {
+
+    font-size: @bigger;
+    color: @violet-dark;
+    font-style: italic;
+    font-weight: bold;
+
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+
+  @import "audit-order--tablet.less";
+
+}
+
+@media (max-width: @screen-xs-max) {
+
+  @import "audit-order--phone.less";
+
+}

@@ -1,0 +1,161 @@
+.audit-variants {
+
+  position: relative;
+  background-color: @beige-light;
+  padding-top: 75px;
+  padding-bottom: 65px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 37px;
+    width: 50%;
+    top: -37px;
+    right: 0;
+    background-color: @beige-light;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 50%;
+    top: -37px;
+    border-right: 34px solid @beige-light;
+    border-top: 37px solid transparent;
+  }
+
+  &__title {
+      
+    color: @green-new;
+    font-weight: normal;
+    font-size: @extra;
+    position: absolute;
+    left: 53%;
+    top: -85px;
+
+  }
+
+  &__table-wrapper {
+
+  }
+
+  &__table {
+
+    width: 100%;
+    font-size: @normal;
+    line-height: @medium;
+    color: @blue-dark;
+    text-align: center;
+    border-spacing: 0;
+
+  }
+
+  &__table-head {
+
+    font-size: @bigger;
+
+    & th {
+
+      padding-bottom: 25px;
+      border-bottom: 1px solid #cecece;
+      font-weight: normal;
+
+      &:first-child {
+
+        text-align: left;
+        padding-left: 10px;
+
+      }
+
+    }
+
+  }
+
+  &__table-body {
+
+    & td {
+
+      padding: 10px 0;
+
+      &:first-child {
+
+        text-align: left;
+        padding-left: 10px;
+
+      }
+
+    }
+
+  }
+
+  &__tr-underlined {
+
+    & td {
+
+      padding-bottom: 20px;
+      border-bottom: 1px solid #cecece;
+
+    }
+
+  }
+
+  &__tr-after-underlined {
+
+    & td {
+
+      padding-top: 20px;
+
+    }
+
+  }
+
+  &__tr-bold {
+
+    font-weight: bold;
+
+  }
+
+  &__icon {
+
+    background-image: url('@{base-url}audit-variants/img/sprite.png');    
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &-no {
+
+      .stitches-icon(-30px, -5px, 16px, 16px);
+
+    }
+
+    &-yes {
+
+      .stitches-icon(-5px, -31px, 18px, 15px);
+
+    }
+
+    &-arrowdown {
+
+      .stitches-icon(-5px, -5px, 15px, 8px);
+
+    }
+}
+
+}
+
+
+
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+
+  @import "audit-variants--tablet.less";
+
+}
+
+@media (max-width: @screen-xs-max) {
+
+  @import "audit-variants--phone.less";
+
+}
